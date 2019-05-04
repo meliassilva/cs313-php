@@ -1,5 +1,5 @@
 <?php
-
-  phpinfo();
+  
+  <?php include "MainPage/mainpage.php" ?>
 
 ?>
