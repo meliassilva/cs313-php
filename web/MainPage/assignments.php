@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Mario Assignments</title>
+    <link rel="stylesheet" href="style.css"
 </head>
 
-<body style="background-color:skyblue; text-align:center;">
-
+<header>
     <h1>Mario da Silva Filho</h1>
     <h1>CS 313 - Web Enginnering 2 Assignments</h1>
-<?php
-  echo "<h1>Under Construction, will be aavailable soon!\n </h>";
-  echo "<img src='underc.png' />";
-?>
+</header>
 
+<body style="text-align:center;">
+
+<?php
+  echo "<h1>Under Construction, will be available soon!\n</h1>";
+  echo "<img src='underc.jpeg'/>\n";
+?>
+<br>
+<form>
+<a class="btn" href="mainpage.php" onclick="mainpage.php"/>Back to Main Page</a>
+</form>
 </body>
 
 <footer class="footer">
     <hr/>
-    <a href="index.html">CS 313 Assignments</a>
+    <a>CS 313 Assignments</a>
     <p>© Copyright Mario Elias - All rights reserved<br/></p> 
-</footer>   
+</footer> 
+ 
 </html>
 
