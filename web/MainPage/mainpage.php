@@ -23,9 +23,13 @@
     <div class="h1">
          <h1 style = "text-align: center" >My things are here</h1>
     <div/>
-    <div>
-        <img src="connection.png" width= 80% alt="">
-    </div> 
+    <?php
+
+    echo "<img src='underc.jpeg'/>\n";
+    echo "<h1>More Information about me soon!\n</h1>";
+    echo "<img src='mario.jpg'/>\n";
+
+    ?>
     </div>
     <br><br><br>
 </div>
