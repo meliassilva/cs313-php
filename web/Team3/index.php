@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="handle.php" method ="post">
-        <label for="">Name</label>
+        <label for="">Name &#x1F605;</label>
         <input type="text" name="name" id="name"><br>
         <label for="">Email</label>
         <input type="text" name="email" id="email"><br>
