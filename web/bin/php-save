@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -r -p 'Relevant y/n? ' rel
+desc="Irrelevant"
+if[[ $rel == "Y" || $rel == "y"]]; then
+	read -r -p 'Commit message: ' desc
+fi
+git add.
+git commit -m "$desc"
+git push heroku master
+git push github master
