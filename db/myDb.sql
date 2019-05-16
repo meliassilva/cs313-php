@@ -1,16 +1,20 @@
 CREATE TABLE users(
 user_id serial NOT NULL PRIMARY KEY,
 name varchar(50) NOT NULL,
-last_name varchar(50)
+last_name varchar(50) NOT NULL,
+password varchar (50) NOT NULL,
+phone_number int NOT NULL
 );
 
-CREATE TABLE speaker(
-speaker_id serial NOT NULL PRIMARY KEY,
-name varchar(50) NOT NULL
+CREATE TABLE games(
+game_id serial NOT NULL PRIMARY KEY,
+game_name varchar(50) NOT NULL,
+user_id int references users(user_id),
+type varchar(50)NOT NULL
 );
 
 
-CREATE TABLE conference(
+CREATE TABLE borrow(
 conference_id serial NOT NULL PRIMARY KEY,
 month varchar(50) NOT NULL,
 year int NOT NULL
@@ -32,14 +36,3 @@ session_id int NOT NULL references session(session_id),
 data varchar(255) NOT NULL
 );
 
-INSERT INTO users(name) VALUES('Mario');
-
-INSERT INTO users(name) VALUES('Tristan');
-
-INSERT INTO speaker(name) VALUES('Bednar');
-
-INSERT INTO speaker(name) VALUES('Oaks');
-
-INSERT INTO speaker(name) VALUES('Nelson');
-
-INSERT INTO conference(month, year) VALUES('April', 2001);
