@@ -10,29 +10,28 @@ CREATE TABLE games(
 game_id serial NOT NULL PRIMARY KEY,
 game_name varchar(50) NOT NULL,
 user_id int references users(user_id),
-type varchar(50)NOT NULL
+game_type varchar(50)NOT NULL
 );
 
 
 CREATE TABLE borrow(
-conference_id serial NOT NULL PRIMARY KEY,
-month varchar(50) NOT NULL,
-year int NOT NULL
+borrow_id serial NOT NULL PRIMARY KEY,
+day varchar(50) NOT NULL,
+hourDay int NOT NULL
 );
 
-CREATE TABLE session(
-session_id serial NOT NULL PRIMARY KEY,
-conference_id int NOT NULL references conference(conference_id),
-session_time varchar(10) NOT NULL,
-session_day varchar(10) NOT NULL
+CREATE TABLE history(
+history_id serial NOT NULL PRIMARY KEY,
+game_id int NOT NULL REFERENCES conference(conference_id),
+user_id int REFERENCES users(user_id),
+day varchar(50) REFERENCES borrow(day)
 );
 
 CREATE TABLE notes(
 notes_id serial NOT NULL PRIMARY KEY,
 user_id int NOT NULL references users(user_id),
-speaker_id int NOT NULL references speaker(speaker_id),
-conference_id int NOT NULL references conference(conference_id),
-session_id int NOT NULL references session(session_id),
-data varchar(255) NOT NULL
+game_id int NOT NULL references speaker(speaker_id),
+message_user varchar(300)
 );
 
+SELECT * FROM pg_stat_activity;
