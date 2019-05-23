@@ -1,5 +1,3 @@
-<?php
-  
-  <?php include "MainPage/mainpage.php" ?>
-
-?>
+ <?php 
+  include "MainPage/mainpage.php" 
+  ?>
