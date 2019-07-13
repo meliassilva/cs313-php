@@ -4,19 +4,18 @@
 <head>
     <% include ../partials/header_postal.ejs %>
 </head>
-
 <body>
-
+    
     <% include ../partials/nav_postal.ejs %>
-
+<h1>Postal Rate Calculator</h1>
         <div class="container">
             <form action="postal_results" method="get">
                 <table>
                     <tr>
-                        <th class="formLabel">Weight (oz)</th>
+                        <th class="formLabel">Please input the weight in oz:</th>
                         <th><input type="text" name="mailWeight"></th>
                     </tr>
-                    <tr>
+                    <tr><br><br>
                         <th class="formLabel">Type</th>
                         <th>
                             <select name="mailType" id="mailType">
@@ -27,7 +26,7 @@
                             </select>
                         </th>
                     </tr>
-                </table>
+                </table><br><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
