@@ -1,0 +1,24 @@
+{
+  "name": "cs313-php",
+  "version": "1.0.0",
+  "description": "CS 313 PHP Base Code",
+  "main": "main_modular.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byui-cs/cs313-php.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/byui-cs/cs313-php/issues"
+  },
+  "homepage": "https://github.com/byui-cs/cs313-php#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "pg": "^7.11.0"
+  }
+}

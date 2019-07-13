@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../partials/header_postal.ejs %>
+</head>
+
+<body>
+
+    <% include ../partials/nav_postal.ejs %>
+
+        <div class="container">
+            <form action="postal_results" method="get">
+                <table>
+                    <tr>
+                        <th class="formLabel">Weight (oz)</th>
+                        <th><input type="text" name="mailWeight"></th>
+                    </tr>
+                    <tr>
+                        <th class="formLabel">Type</th>
+                        <th>
+                            <select name="mailType" id="mailType">
+                            <option value="stamped">Letters (Stamped)</option>
+                            <option value="metered">Letters (Metered)</option>
+                            <option value="flats">Large Envelopes (Flats)</option>
+                            <option value="retail">First-Class Package Service&#8212;Retail</option>
+                            </select>
+                        </th>
+                    </tr>
+                </table>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+</body>
+
+</html>
