@@ -1,8 +1,8 @@
 <?php
 
   // variables
-  $dbUser = 'brother_burton';
-  $dbPassword = 'bradismyfavoritestudent';
+  $dbUser = 'mario';
+  $dbPassword = 'marioelias';
   $dbName = 'postgres';
   $dbHost = 'localhost';
   $dbPort = '5432';
