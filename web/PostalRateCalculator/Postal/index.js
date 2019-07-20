@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000
 function postalConversion(mailType, mailWeight) {
     var result;
     var mailWeightCeil = Math.ceil(mailWeight);
-    if (mailWeightCeil < 0) // something is wrong with the weight :O
+    if (mailWeightCeil < 0) 
         return -1;
     switch (mailType) {
         case "stamped":
@@ -53,20 +53,3 @@ express()
         });
     })
     .listen(PORT, () => console.log(`Listening on ${ PORT }`))
-    // .get('/math', function(req, res) {
-    //     var operatorMap = {
-    //         'plus': '+',
-    //         'minus': '-',
-    //         'divide': '/',
-    //         'multiply': '*'
-    //     };
-    //     var op1 = Number(req.query.op1);
-    //     var op2 = Number(req.query.op2);
-    //     var operator = operatorMap[req.query.operator];
-    //     var equation = op1.toString() + operator + op2.toString();
-    //     var result = eval(equation);
-    //     res.render('pages/math', {
-    //         equation: equation,
-    //         result: result
-    //     });
-    // })
