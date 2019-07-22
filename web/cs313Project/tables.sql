@@ -71,9 +71,9 @@ VALUES
 INSERT INTO player
 (username, password, currency)
 VALUES
-  ('Brad Marx', '123', 9001)
-, ('Brother Burton', '123', 99999)
-, ('Karl Marx', 'russia', 1)
+  ('Jon Doe', '123', 9001)
+, ('Jane Doe', '123', 99999)
+, ('Mario Elias', 'russia', 1)
 ;
 
 INSERT INTO userTOitems
