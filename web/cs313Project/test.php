@@ -1,4 +1,4 @@
-<!-- THIS PAGE IS PURELY FOR TESTING PURPOSES -->
+<!-- TestPage -->
 
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
 		<br/><br/>
 
     <?php
-////////////////// TEST CODE HERE ////////////////////////
+//Testing
 session_start();
 
 $itemId = $_POST["itemId"];
@@ -20,9 +20,6 @@ $sellPrice = $_POST["sellPrice"];
 
 echo "Item id: " . $itemId . "   Sellprice: " . $sellPrice . "<br/>";
 
-
-
-///////////////////// UP TO HERE ////////////////////////
     ?>
 
 	</div>
