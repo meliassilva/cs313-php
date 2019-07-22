@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "username";
 $password = "password";
-$dbname = "myDB";
+$dbname = "postgres";
 $conn = new PDO($servername, $username, $password, $dbname);
 
 // Check connection
