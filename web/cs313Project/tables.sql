@@ -1,4 +1,3 @@
-
 CREATE TABLE player
 (
   id              SERIAL PRIMARY KEY 	NOT NULL
