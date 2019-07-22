@@ -29,7 +29,7 @@ $currency = $_SESSION["currency"];
     <?php
     echo "<p> Welcome back " . $username . "</p>";
     echo "<p> You are member number: " . $playerId . "!</p>";
-    echo "<p> You have " . $currency . " Brad Points</p>";
+    echo "<p> You have " . $currency . "</p>";
 
     echo "<br/> Your Items: ";
     echo "<table style='width:40%; border:1px solid black;'>";

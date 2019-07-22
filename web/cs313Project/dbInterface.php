@@ -1,4 +1,3 @@
-<!-- THIS PAGE IS PURELY FOR DATABASE VIEWING PURPOSES -->
 
 <?php
 session_start();
